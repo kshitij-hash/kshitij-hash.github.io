@@ -1,0 +1,540 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5d9d5;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ea1c2c;
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+li,a {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    color: white;
+    /* color: #7a7a7a; */
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10% 15px 10%;
+    width: 100%;
+    transition: background 200ms ease-in;
+    position: fixed;
+    z-index: 3;
+}
+
+.sticky {
+    background-color: rgb(222,192,222);
+}
+
+.nav_links {
+    list-style: none; 
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links li a {
+    transition: all 500ms ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #ea1c2c;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 250px;
+}
+
+.section1 {
+    width: 50%;
+    padding-left: 10%;
+}
+
+.section2 {
+    width: 50%;
+} 
+
+.section2 img { 
+    display: block;
+    margin: auto;
+    height: 350px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.head {
+    font-weight: bold;
+    font-size: 2.7rem;
+    color: #ea1c2c;
+    line-height: normal;
+}
+p {
+    font-weight: lighter;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #f498b8;
+}
+
+.hobbies {
+    background-color: #232323;
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 250px;
+}
+
+.work {
+    width: 50%;
+    padding-left: 10%;
+}
+
+.work img {
+    display: block;
+    height: 450px;
+    width: 550px;
+    transition: all 0.5s;
+    border: 2px solid white;
+    border-radius: 15%;
+}
+
+.work img:hover, .tech img:focus  {
+    border-color: #f1ff5c;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateX(0.25em);
+}
+
+.head_2 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 2.7rem;
+    padding-bottom: 50px;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    padding-left: 10%;
+    margin: 0 157.2px;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    gap: 20px;
+}
+
+.cricket {
+    transition: all 500ms;
+}
+.gaming {
+    transition: all 500ms;
+}
+.music {
+    transition: all 500ms;
+}
+.podcast {
+    transition: all 500ms;
+}
+.coding {
+    transition: all 500ms;
+}
+
+.cricket:hover, .cricket:focus {
+    border-radius: 10px;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateX(0.25em);
+    color: #f1ff5c;
+}
+.gaming:hover, .gaming:focus {
+    border-radius: 10px;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateX(0.25em);
+    color: #f1ff5c;
+}
+.music:hover, .music:focus {
+    border-radius: 10px;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateX(0.25em);
+    color: #f1ff5c;
+}
+.podcast:hover, .podcast:focus {
+    border-radius: 10px;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateX(0.25em);
+    color: #f1ff5c;
+}
+.coding:hover, .coding:focus {
+    border-radius: 10px;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateX(0.25em);
+    color: #f1ff5c;
+}
+
+.hobby > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.my_skills {
+    padding-top: 125px;
+    padding-bottom: 100px;
+}
+
+.head_3 {
+    text-transform: uppercase;
+    color: #ea1c2c;
+    font-weight: bold;
+    font-size: 2.7rem;
+    padding-left: 10%;
+    padding-top: 25px;
+}
+
+.skillbar{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+    padding: 5% 5% 5% 10%;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.skillbar li {
+    padding-bottom: 25px;
+    transition: all 0.8s;
+    margin-bottom: 10px;
+}
+
+.skillbar li:hover, .skillbar li:focus {
+    border-radius: 10px;
+    box-shadow: 0 0.5em 0.5em -0.4em #ea1c2c;
+    transform: translateY(-0.25em);
+}
+
+.skillbar li:hover .bar > span {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.skillbar li h3 {
+    color: #f498b8;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+
+.bar{
+    background: white;
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar > span{
+    background-color: #ea1c2c;
+    position: absolute;
+    height: 100%;
+    transition: all 0.8s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.skill-html{
+    width: 90%;
+}
+.skill-css{
+    width: 80%;
+}
+.skill-c{
+    width: 60%;
+}
+.skill-python {
+    width: 65%;
+}
+.skill-js{
+    width: 25%;
+} 
+
+.code {
+    width: 50%;
+    padding-left: 10%;
+    margin-right: 5%;
+}
+
+.code img {
+    display: block;
+    height: 450px;
+    width: 550px;
+    transition: all 0.5s;
+    border: 2px solid white;
+    border-radius: 15%;
+}
+
+.code img:hover, .code img:focus  {
+    border-color: #ea1c2c;
+    box-shadow: 0 0.5em 0.5em -0.4em #ea1c2c;
+    transform: translateY(-0.25em);
+}
+
+.footer {
+    background: #232323;
+    padding: 25px 10% 10px 10%;
+}
+
+.footer .links {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+.footer .links a {
+    font-size: 1.6rem;
+    color: inherit;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 15px;
+    opacity: 0.5;
+}
+
+.footer .links a:hover {
+    opacity: 1;
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 2;
+    text-align: center;
+}
+
+.footer ul li a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    color: #aaa;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width: 1221px) {
+    .code {
+        display: none;
+    }
+    .head_3 {
+        text-align: center;
+        padding-right: 10%;
+    }
+    .my_skills {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .skillbar {
+        width: 100%;
+    }
+}
+
+@media (max-width:1021px) {
+    .work {
+        display: none;
+    }
+    .hobbies {
+        width: 100%;
+        padding: 100px 0;
+    }
+    .hobby {
+        margin: 0 auto;
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width:950px) {
+    .info {
+        flex-direction: column;
+        padding-bottom: 50px;
+        gap: 30px;
+        padding-top: 160px;
+    }
+    .section1 {
+        padding-left: 0;
+        width: 80%;
+    }
+    .section1 .head {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .head_2 {
+        font-size: 1.7rem;
+    }
+    .hobby {
+        font-size: 1rem;
+    }
+    .head_3 {
+        font-size: 1.7rem;
+    }
+    .skillbar li h3 {
+        font-size: 1rem;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+    .nav_links li a {
+        font-size: 0.9rem;
+    }
+    .section2 img {
+        width: 70%;
+        /* min-width: 250px; */
+        height: auto;
+    }
+}
+
+@media (max-width:500px) {
+    header {
+        flex-direction: column;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    .nav_links li {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width:375px) {
+
+    .nav_links li {
+        padding: 0 10px;
+    }
+    .footer .links a {
+        margin: 0 5px;
+    }
+    .section1 .head {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.6rem;
+    }
+    .head_2 {
+        font-size: 1rem;
+    }
+    .hobby {
+        font-size: 0.6rem;
+    }
+    .head_3 {
+        font-size: 1rem;
+    }
+    .skillbar li h3 {
+        font-size: 0.6rem;
+    }
+    header h1 {
+        font-size: 1rem;
+    }
+    .nav_links li a {
+        font-size: 0.6rem;
+    }
+}
